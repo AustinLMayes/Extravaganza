@@ -1,0 +1,10 @@
+name: Extravaganza
+author: Austin Mayes
+main: me.austinlm.extravaganza.ExtravaganzaPlugin
+description: Birthday Fun
+version: 1.17.1
+website: http://austinlm.me/
+commands:
+    bday:
+        description: birthday command
+        usage: /<command> <subcommand>
