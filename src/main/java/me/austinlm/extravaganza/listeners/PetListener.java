@@ -39,6 +39,10 @@ public class PetListener implements Listener {
 
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
+        if (!ExtravaganzaPlugin.isBirthday(event.getPlayer())) {
+            return;
+        }
+
         if (entity == null) {
             entity = event.getPlayer().getWorld().spawnEntity(event.getPlayer().getLocation(), this.type);
             entity.setCustomNameVisible(true);
